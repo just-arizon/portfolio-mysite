@@ -1,0 +1,24 @@
+:root{
+    /* Colors */
+    --hover-clr:#00d8c9;
+    --heading-clr: #fffbfa;
+    --bg-clr: #231e23;
+    --preload-bg: #ddd;
+
+    /* Fonts */
+    
+    --fontlogo: SpaceAge;
+    --font-1: Zabal;
+    --font-2: "Koulen", cursive;
+    
+}
+/* Customize Fonts */
+@font-face {
+  font-family: SpaceAge;
+  src: url(/fonts/space\ age.ttf);
+}
+
+@font-face {
+  font-family: Zabal;
+  src: url(/fonts/ZabalDEMO-Bold.ttf);
+}
