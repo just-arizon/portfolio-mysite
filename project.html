@@ -102,7 +102,7 @@
 
     <section class="project">
       <div class="intro">
-        <h1>Projects</h1>
+        <h1><span>Projects</span></h1>
       </div>
       <div class="wrapper-of-blog">
         <div class="wrapper-of-blog__container-2">
@@ -178,6 +178,7 @@
             </div>
       </section> 
    <!-- Scripts -->
+
      <script src="./css-js/index.js"></script>
     <!-- Other script -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
@@ -185,5 +186,13 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 
+      <script type="module">
+      import { annotate } from "https://unpkg.com/rough-notation?module";
+
+      const n4 = document.querySelector("span");
+      const a4 = annotate(n4, { type: 'box', color: '#00d8c9', iterations: 3, multiline: true });
+
+      a4.show();
+    </script>
 </body>
 </html>

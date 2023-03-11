@@ -20,3 +20,19 @@ document.querySelectorAll(".nav-linkd").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+// Enable hidden nav bar
+{
+  const nav = document.querySelector(".site-navbar");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+      nav.classList.add("nav--hidden");
+    } else {
+      nav.classList.remove("nav--hidden");
+    }
+
+    lastScrollY = window.scrollY;
+  });
+}
+ 

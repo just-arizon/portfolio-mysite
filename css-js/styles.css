@@ -294,14 +294,14 @@ div.wrapper-container-one {
 }
 div.wrapper-container-one::before {
   content: "";
-  width: 300px;
+  width: 150px;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background-color: hsla(0, 0%, 100%, 0.502);
   transition: 0.8s ease-out;
-  transform: skewX(45deg) translateX(1000px);
+  transform: skewX(45deg) translateX(800px);
   animation: shiny 2s ease 2s;
 }
 div.wrapper-container-one:hover::before {
@@ -326,6 +326,7 @@ h2.wrapper-container-one-heading {
   line-height: 5rem;
   background-color: #00d8c9;
   font-size: 25px;
+    margin-bottom: 40px;
 }
 div.wrapper-container-one > .message {
   position: relative;
@@ -704,7 +705,6 @@ section.services {
 
 h3 {
   color: #00d8c9;
-  font-size: ;
   font-family: "Koulen", cursive;
 }
 /* Contact Section */
@@ -838,6 +838,7 @@ textarea::placeholder {
   opacity: 1;
   user-select: none;
   color: #00d8c9;
+  font-family: var(--font-1);
 }
 
 .textInputWrapper .textInput {
@@ -900,13 +901,13 @@ button.button.button--send {
   font-size: 20px;
   background: #00d8c9;
   color: white;
-  padding: 0.7em 1em;
-  padding-left: 0.9em;
+  padding: 0.4em 15.5em;
+  /* padding-left: 0.9em; */
   display: flex;
   display: -moz-flexbox;
   align-items: center;
   border: none;
-  border-radius: 16px;
+  border-radius: 10px;
   overflow: hidden;
   transition: all 0.2s;
 }
@@ -932,7 +933,7 @@ button.button.button--send:hover svg {
 }
 
 button.button.button--send:hover span {
-  transform: translateX(5em);
+  transform: translateX(20em);
 }
 
 button.button.button--send:active {
@@ -984,27 +985,38 @@ button.button.button--send:active {
 }
 /* Footer */
 .site-footer {
-  background-color: #231e23;
+  background-color: var(--bg-clr);
+  padding-top: 4em;
+}
+.site-footer .container{
+  display: flex;
+  justify-content: center;
 }
 .site-footer p {
   color: #00d8ca;
   font-family: "DM Sans", cursive;
+  font-size: .93rem;
 }
-.site-footer p a {
+.site-footer p span {
   color: #ddd;
   font-family: "Zabal", cursive;
-  text-decoration: none;
+  
 }
 
 /* Navigation Mobile Responsiveness */
 
-@media only screen and (max-width: 480px) {
+@media(max-width: 480px) {
   .site-navbar {
     width: 100%;
     position: fixed;
-    bottom: -1px;
+    bottom: 0;
     z-index: 600;
+    transition: transform 0.9s ease-out;
   }
+  .nav--hidden { 
+  bottom: -100%;
+}
+
   .site-logo {
     flex-grow: 1.5;
     flex-shrink: 0;
@@ -1032,6 +1044,9 @@ button.button.button--send:active {
   div.wrapper-container-one {
     min-height: 430px;
   }
+  h2.wrapper-container-one-heading {
+    margin-bottom: 20px;
+}
   div.wrapper-container-one > .message {
     position: relative;
     top: 30px;
@@ -1089,7 +1104,7 @@ button.button.button--send:active {
   }
   /* sections heading */
   .intro h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   /* Contact section */
   section.contact_section {
@@ -1106,6 +1121,9 @@ button.button.button--send:active {
     display: -moz-flexbox;
     flex-direction: column;
   }
+  .contact-header h1 {
+  font-size: 30px;
+}
   .contact__wrapper {
     display: flex;
     display: -moz-flexbox;
@@ -1151,4 +1169,33 @@ button.button.button--send:active {
     margin: 40px 5px;
     --accent-color: #00d8c9;
   }
+  button.button.button--send {
+     padding: 0.3em 5.5em;
+     border-radius: 7px;
+  }
+  button.button.button--send span{
+    margin: 0 auto;
+  }
+  button.button.button--send:hover span {
+  transform: translateX(8em);
+}
+/* footer */
+.site-footer {
+  background-color: var(--bg-clr);
+  padding: 2em;
+}
+.site-footer .container{
+  display: flex;
+  justify-content: center;
+}
+}
+@media(min-width: 480px) and (max-width: 751px) {
+ .textInputWrapper {
+  position: relative;
+  width: 400px;
+  margin: 40px 5px;
+}
+button.button.button--send {
+   padding: 0.4em 8.2em;
+}
 }
