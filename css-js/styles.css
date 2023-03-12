@@ -197,6 +197,7 @@ section.site-hero {
     rgba(37, 37, 37, 1) 50%,
     rgba(0, 216, 201, 1) 100%
   );
+  position: relative;
 }
 
 .site-hero .container {
@@ -983,24 +984,83 @@ button.button.button--send:active {
   color: #ffffff94;
   font-family: "DM Sans", cursive;
 }
+
 /* Footer */
+.custom-shape-divider-top-1678630461 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1678630461 svg {
+    position: relative;
+    display: block;
+    width: calc(168% + 1.3px);
+    height: 117px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1678630461 .shape-fill {
+    fill: #231E23;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1678630461 svg {
+        width: calc(150% + 1.3px);
+        height: 137px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1678630461 svg {
+        width: calc(219% + 1.3px);
+        height: 79px;
+    }
+}
 .site-footer {
-  background-color: var(--bg-clr);
-  padding-top: 4em;
+  position: relative;
+  background-color: #00d8c9;
+  padding-top: 8em;
+  padding-bottom: 2.5em;
 }
 .site-footer .container{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+.site-footer .row.mb-4{
+ display: flex;
+ justify-content: center;
+}
+.row--wrap .footer-list{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer-list li{
+  list-style: none;
+}
+.footer-list li a{
+  font-size: 18px;
+  font-family: var(--font-1);
+  /* text-decoration: none; */
+  color: var(--bg-clr);
 }
 .site-footer p {
-  color: #00d8ca;
+  color: var(--bg-clr);
   font-family: "DM Sans", cursive;
   font-size: .93rem;
+  padding-top: 20px;
 }
 .site-footer p span {
-  color: #ddd;
+  color: var(--heading-clr);
   font-family: "Zabal", cursive;
-  
+  display: block;
+  text-align: center;
 }
 
 /* Navigation Mobile Responsiveness */
@@ -1181,12 +1241,17 @@ button.button.button--send:active {
 }
 /* footer */
 .site-footer {
-  background-color: var(--bg-clr);
-  padding: 2em;
+  padding-top: 5em;
+  padding-bottom: 2.5em;
 }
 .site-footer .container{
   display: flex;
   justify-content: center;
+}
+.row--wrap .footer-list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 }
 @media(min-width: 480px) and (max-width: 751px) {
