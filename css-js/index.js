@@ -36,3 +36,5 @@ document.querySelectorAll(".nav-linkd").forEach((n) =>
   });
 }
  
+//  View image certificates full-screen
+//  
