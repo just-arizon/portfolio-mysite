@@ -68,6 +68,7 @@ div#preloader {
   background-color: var(--bg-clr);
   display: flex;
   z-index: 300;
+  padding: 0 1rem;
 }
 .site-logo {
   height: 63.5px;
@@ -130,7 +131,6 @@ div.nav-menu {
 
   transform: translateY(100%);
   visibility: hidden;
-  /* display: none; */
 }
 .nav-menu.active {
   display: block;
@@ -198,15 +198,14 @@ section.site-hero {
     rgba(0, 216, 201, 1) 100%
   );
   position: relative;
+  padding: 4rem;
 }
 
 .site-hero .container {
-  width: 100%;
-  padding-top: 35px;
-  padding-right: 65px;
-  padding-left: 65px;
-  margin-right: auto;
-  margin-left: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-80%);
 }
 .carousel {
   position: relative;
@@ -214,6 +213,8 @@ section.site-hero {
   height: 4.5rem;
   text-align: center;
   line-height: 45px;
+  overflow: hidden;
+
 }
 
 .carousel .changeHidden {
@@ -274,11 +275,9 @@ div#wrapper {
   display: flex;
   display: -moz-flexbox;
   justify-content: center;
-  margin-top: -2rem;
 }
 div.wrapper-container-one {
   max-width: 680px;
-  min-height: 350px;
   background: #ffffff1a;
   border-radius: 20px;
   border-left: 2px solid rgba(255, 255, 255, 0.5);
@@ -290,10 +289,11 @@ div.wrapper-container-one {
   display: -moz-flexbox;
   flex-direction: column;
   gap: 16px;
-  margin-top: 25px;
+  /* margin-top: 25px; */
+  padding: 0 0 3rem;
   overflow: hidden;
 }
-div.wrapper-container-one::before {
+/* div.wrapper-container-one::before {
   content: "";
   width: 150px;
   height: 100%;
@@ -316,7 +316,7 @@ div.wrapper-container-one:hover::before {
   to {
     transform: skewX(45deg) translateX(-650px);
   }
-}
+} */
 
 h2.wrapper-container-one-heading {
   text-align: center;
@@ -328,6 +328,7 @@ h2.wrapper-container-one-heading {
   background-color: #00d8c9;
   font-size: 25px;
     margin-bottom: 40px;
+    
 }
 div.wrapper-container-one > .message {
   position: relative;
