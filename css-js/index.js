@@ -8,8 +8,8 @@ window.addEventListener("load", () => {
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const logoLink = document.querySelector("logoSymbol");
-const projectMenu = document.querySelector("main");
+// const logoLink = document.querySelector("logoSymbol");
+// const projectMenu = document.querySelector("main");
 
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");

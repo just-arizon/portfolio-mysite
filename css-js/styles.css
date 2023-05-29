@@ -69,6 +69,7 @@ div#preloader {
   display: flex;
   z-index: 300;
   padding: 0 1rem;
+  position: fixed;
 }
 .site-logo {
   height: 63.5px;
@@ -198,14 +199,11 @@ section.site-hero {
     rgba(0, 216, 201, 1) 100%
   );
   position: relative;
-  padding: 4rem;
+  /* margin-top: 5rem; */
+  padding-top: 6rem;
 }
 
 .site-hero .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-80%);
 }
 .carousel {
   position: relative;
@@ -288,8 +286,8 @@ div.wrapper-container-one {
   display: flex;
   display: -moz-flexbox;
   flex-direction: column;
-  gap: 16px;
-  /* margin-top: 25px; */
+  gap: 2px;
+  margin-top: 25px;
   padding: 0 0 3rem;
   overflow: hidden;
 }
@@ -412,13 +410,12 @@ div.wrapper-container-one > .message {
 }
 .wrapper-of-container-2_content {
   max-width: 300px;
-  min-height: 480px;
-  height: 280px;
+  /* min-height: 480px;
+  height: 280px; */
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 15px;
   background: #231e23;
-  /* box-shadow: 5px 5px 10px #1e1a1e, -5px -5px 10px #282328; */
   box-shadow: var(--hover-clr) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
@@ -688,8 +685,8 @@ section.services {
 .myservice--wrap {
   width: 500px;
   max-width: 330px;
-  min-height: 450px;
-  padding: 20px;
+  /* min-height: 450px;  */
+  padding: 40px 20px;
   border-radius: 20px;
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   border-top: 2px solid rgba(255, 255, 255, 0.5);
@@ -1107,30 +1104,38 @@ button.button.button--send:active {
   /* navBar */
   div.nav-menu {
   }
-  .nav-menu.active {
+  section.site-hero  {
+  padding-top: 1rem;
   }
 
   .site-hero .container {
     width: 100%;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
     margin-right: auto;
     margin-left: auto;
   }
+  .carousel .changeHidden {
+  height: 13rem;
+  line-height: 13rem;
+
+}
   div#wrapper {
     margin-top: -1rem;
   }
-  div.wrapper-container-one {
-    min-height: 430px;
-  }
+ div.wrapper-container-one {
+  max-width: 300px;
+  gap: 2px;
+  margin-top: 15px;
+  padding: 0 0 1.5rem;
+}
   h2.wrapper-container-one-heading {
-    margin-bottom: 20px;
 }
   div.wrapper-container-one > .message {
     position: relative;
-    top: 30px;
-    font-size: 15.5px;
+    top: 2px;
+    font-size: 14.5px;
     font-family: "DM Sans", sans-serif;
     color: #fffbfa;
     text-align: center;
