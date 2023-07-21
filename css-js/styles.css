@@ -373,7 +373,7 @@ div.wrapper-container-one > .message {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 36px;
+  gap: 50px;
   max-width: 1350px;
   /* background-color: salmon; */
   margin: 30px auto;
@@ -382,7 +382,7 @@ div.wrapper-container-one > .message {
   max-width: 300px;
   /* min-height: 480px;
   height: 280px; */
-  padding: 20px;
+  padding: 0 15px 25px 15px;
   margin-bottom: 20px;
   border-radius: 15px;
   background: #231e23;
@@ -394,23 +394,23 @@ div.wrapper-container-one > .message {
  width: 10px;
  height: 10px;
  border-radius: 50%;
-background-color: #00d8ca;
-margin: 0 0 20px;
+/* background-color: #00d8ca; */
+margin: 0 0 5px;
 }
 .wrapper-of-container-2_content .circle-pink {
   width: 100%;
   border-radius: 5px;
-  background-color: #00d8ca;
+  /* background-color: #231E23; */
   padding: 10px;
   margin-bottom: 20px;
   font-family: var(--font-1);
-  text-align: center;
+  /* text-align: center; */
   color: var(--heading-clr);
 }
 
 .wrapper-of-container-2__img {
-  width: 260px;
-  height: 130px;
+  width: 275px;
+  height: auto;
   display: block;
   margin-bottom: 20px;
 }
@@ -424,8 +424,8 @@ margin: 0 0 20px;
 }
 .wrapper-of-container-2__link {
   display: flex;
+  justify-content: space-between;
   display: -moz-flexbox;
-  justify-content: center;
   margin-top: 30px;
 }
 
