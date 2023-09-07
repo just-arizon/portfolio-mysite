@@ -7,12 +7,11 @@ window.addEventListener("load", () => {
 //  Hamburger
 
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-// const logoLink = document.querySelector("logoSymbol");
-// const projectMenu = document.querySelector("main");
+const navMenu = document.querySelector("#nav-menu");
+
 
 hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
+  navMenu.classList.add("active");
 });
 
 document.querySelectorAll(".nav-linkd").forEach((n) =>
@@ -21,7 +20,7 @@ document.querySelectorAll(".nav-linkd").forEach((n) =>
   })
 );
 // Enable hidden nav bar
-{
+
   const nav = document.querySelector(".site-navbar");
   let lastScrollY = window.scrollY;
 
@@ -34,7 +33,7 @@ document.querySelectorAll(".nav-linkd").forEach((n) =>
 
     lastScrollY = window.scrollY;
   });
-}
+
  
 //  View image certificates full-screen
 //  
